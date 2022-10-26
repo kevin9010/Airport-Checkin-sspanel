@@ -11,6 +11,7 @@ TG_USER_ID = os.environ.get('TGUSERID')
 def checkin(email=os.environ["EMAIL"], password=os.environ["PASSWORD"],
             base_url=os.environ.get["BASE_URL"], ):
     print(os.environ["EMAIL"])
+    print(os.environ["TZ"])
     email = email.split('@')
     email = email[0] + '%40' + email[1]
     session = requests.session()
