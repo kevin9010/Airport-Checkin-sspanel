@@ -12,3 +12,4 @@ jobs:
         python-version: 3.7
     - run: python3 -m install -U requests
     - run: python3 main.py
+    - run: echo " OK "
