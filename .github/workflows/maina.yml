@@ -28,4 +28,5 @@ jobs:
           EMAIL: ${{ secrets.EMAIL}}
           PASSWORD: ${{ secrets.PASSWORD}}
           BASE_URL: ${{ secrets.BASE_URL}}
+          SCKEY: ${{ secrets.SCKEY}}
         run: python3 main.py
