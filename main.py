@@ -8,8 +8,7 @@ TG_BOT_TOKEN = os.environ.get('TGBOT')
 TG_USER_ID = os.environ.get('TGUSERID')
 
 
-def checkin(email=os.environ["EMAIL"], password=os.environ["PASSWORD"],
-            base_url=os.environ["BASE_URL"], ):
+def checkin(email=os.environ["EMAIL"], password=os.environ["PASSWORD"], base_url=os.environ["BASE_URL"]):
     print(os.environ["EMAIL"])
     print(os.environ["TZ"])
     email = email.split('@')
