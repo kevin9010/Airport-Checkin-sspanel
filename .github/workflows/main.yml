@@ -1,0 +1,14 @@
+name: checkin
+on:
+  schedule:
+  - cron: "0 14 * * *"
+jobs:
+  my_job:
+    name: autocheck
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+      - run: python3 -m install -U requests
+      - run: python3 main.py
