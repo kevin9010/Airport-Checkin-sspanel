@@ -24,4 +24,8 @@ jobs:
           python3 -m pip install --upgrade pip
           pip3 install -U requests
       - name: Run
+        env: 
+          EMAIL: ${{ secrets.EMAIL}
+          PASSWORD: ${{ secrets.PASSWORD}
+          BASE_URL: ${{ secrets.BASE_URL}
         run: python3 ./main.py
