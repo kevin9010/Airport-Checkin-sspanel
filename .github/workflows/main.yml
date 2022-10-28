@@ -1,7 +1,4 @@
 name: checkin
-on:
-  schedule:
-  - cron: "0 14 * * *"
 jobs:
   my_job:
     name: autocheck
